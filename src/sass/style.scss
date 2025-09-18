@@ -1,0 +1,11 @@
+//! Libs
+@use '/src/sass/libs/modern-normalize.min.css';
+@use '/src/sass/libs/ptSans.css';
+
+//! Base
+@use '/src/sass/base/base.scss';
+@use '/src/sass/base/mixins.scss';
+@use '/src/sass/base/variables.scss';
+
+//! Blocks
+@use '/src/sass/blocks/header.scss';

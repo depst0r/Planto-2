@@ -1,0 +1,13 @@
+@mixin bold {
+    font-family: "PTSans-Bold";
+    font-weight: 700;
+    font-size: normal;
+    line-height: normal;
+}
+
+@mixin regular {
+    font-family: "PTSans-Regular";
+    font-weight: 400;
+    font-size: normal;
+    line-height: normal;
+}
