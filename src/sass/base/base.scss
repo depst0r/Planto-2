@@ -1,4 +1,4 @@
-@use '/src/sass/base/mixins.scss'as *;
+@use '/src/sass/base/variables.scss'as *;
 
 h1,
 h2,
@@ -32,6 +32,10 @@ img {
     max-inline-size: 100%;
 }
 
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
 html {
     scroll-behavior: smooth;
@@ -39,6 +43,13 @@ html {
 
 .container {
     padding: $breakpoints-start;
+}
+
+.line {
+    width: 24px;
+    height: 1.88px;
+    background-color: $white;
+    border-radius: 2px;
 }
 
 @media screen and (min-width: 1300px) {
