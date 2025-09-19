@@ -44,5 +44,15 @@
         border: transparent;
         color: $white;
         font-size: 16px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: $red-hover;
+        }
+    }
+
+    #form {
+        flex-direction: column;
+        gap: 19px;
     }
 }
