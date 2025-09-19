@@ -1,0 +1,48 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.form {
+    &__wrapper {
+        justify-content: center;
+    }
+
+    &__input {
+        align-items: center;
+        border: 1px solid #d0d0d0;
+        border-radius: 1px;
+        width: 244px;
+        height: 48px;
+        transition: all 0.3s ease;
+        padding: 10px 13px 10px 14px;
+
+        &:focus-within {
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+    }
+
+    &__prefix-label {
+        text-align: center;
+        font-size: 16px;
+        color: $black-48;
+    }
+
+    &__price {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: $black-48;
+        background: transparent;
+        text-align: right;
+    }
+
+    &__btn {
+        border-radius: 1px;
+        width: 244px;
+        height: 48px;
+        background: $red;
+        border: transparent;
+        color: $white;
+        font-size: 16px;
+    }
+}

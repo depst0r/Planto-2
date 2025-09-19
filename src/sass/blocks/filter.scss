@@ -1,0 +1,18 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.filter {
+    padding-top: 13px;
+
+    &__wrapper {
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 16px;
+        color: $black;
+    }
+
+    &__btn {
+        cursor: pointer;
+    }
+}
