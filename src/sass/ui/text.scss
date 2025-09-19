@@ -1,0 +1,5 @@
+@use '/src/sass/base/mixins.scss'as *;
+
+.text-bold {
+    @include bold;
+}
