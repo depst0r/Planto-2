@@ -41,6 +41,24 @@ html {
     scroll-behavior: smooth;
 }
 
+select {
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    background-image: url("/src/ico/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+    outline-color: #d0d0d0;
+    transition: all 0.3s ease;
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    }
+}
+
+
 .d-flex {
     display: flex;
 }

@@ -70,47 +70,96 @@
             </div>
         </div>
     </section>
-    <section class="form">
-        <div class="form__wrapper d-flex">
-            <div class="container">
-                <form action="#" id="form" class="d-flex">
-                    <div class="form-group">
-                        <select id="logo" name="logo" required>
-                            <option value="">Любого логотипа</option>
-                            <option value="Компакт-камера">Компакт-камера</option>
-                            <option value="Беззеркальная">Беззеркальная</option>
-                            <option value="Зеркальная">Зеркальная</option>
-                            <option value="Среднеформатная">Среднеформатная</option>
-                        </select>
+    <div class="modal-overlay">
+        <button class="close-btn">×</button>
+        <div class="modal">
+            <section class="form">
+                <div class="form__wrapper d-flex">
+                    <div class="container">
+                        <form action="#" id="form" class="d-flex">
+                            <div class="form__group">
+                                <div class="form__select">
+                                    <div class="form__select-trigger" id="custom-logo-trigger">
+                                        <span class="form__select-text text-regular">Любого логотипа</span>
+                                        <span class="form__select-arrow select-arrow">
+                                            <img src="/src/ico/arrow.svg" alt="arrow" class="form__select-arrow-icon">
+                                        </span>
+                                    </div>
+
+                                    <div class="form__select-dropdown">
+                                        <div class="form__select-option text-regular" data-value="">Любого логотипа
+                                        </div>
+                                        <div class="form__select-option text-regular" data-value="Компакт-камера">
+                                            Компакт-камера</div>
+                                        <div class="form__select-option text-regular" data-value="Беззеркальная">
+                                            Беззеркальная</div>
+                                        <div class="form__select-option text-regular" data-value="Зеркальная">
+                                            Зеркальная</div>
+                                        <div class="form__select-option text-regular" data-value="Среднеформатная">
+                                            Среднеформатная</div>
+                                    </div>
+
+                                    <select id="logo" name="logo" class="form__select-hidden" required>
+                                        <option value="">Любого логотипа</option>
+                                        <option value="Компакт-камера">Компакт-камера</option>
+                                        <option value="Беззеркальная">Беззеркальная</option>
+                                        <option value="Зеркальная">Зеркальная</option>
+                                        <option value="Среднеформатная">Среднеформатная</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="form__select">
+                                    <div class="form__select-trigger" id="custom-logo-trigger">
+                                        <span class="form__select-text text-regular">Любого бренда</span>
+                                        <span class="form__select-arrow select-arrow">
+                                            <img src="/src/ico/arrow.svg" alt="arrow" class="form__select-arrow-icon">
+                                        </span>
+                                    </div>
+
+                                    <div class="form__select-dropdown">
+                                        <div class="form__select-option text-regular" data-value="">Любого бренда
+                                        </div>
+                                        <div class="form__select-option text-regular" data-value="Компакт-камера">
+                                            Любого бренда</div>
+                                        <div class="form__select-option text-regular" data-value="Беззеркальная">
+                                            Любого бренда</div>
+                                        <div class="form__select-option text-regular" data-value="Зеркальная">
+                                            Любого бренда</div>
+                                        <div class="form__select-option text-regular" data-value="Среднеформатная">
+                                            Любого бренда</div>
+                                    </div>
+
+                                    <select id="logo" name="logo" class="form__select-hidden" required>
+                                        <option value="">Любого бренда</option>
+                                        <option value="Любого бренда">Любого бренда</option>
+                                        <option value="Любого бренда">Любого бренда</option>
+                                        <option value="Любого бренда">Любого бренда</option>
+                                        <option value="Любого бренда">Любого бренда</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form__input d-flex">
+                                    <span class="form__prefix-label text-regular">от</span>
+                                    <input type="text" class="form__price text-bold" value="500 000"
+                                        placeholder="Введите цену" inputmode="numeric">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form__input d-flex">
+                                    <span class="form__prefix-label text-regular">до</span>
+                                    <input type="text" class="form__price text-bold" value="25 000 000"
+                                        placeholder="Введите цену" inputmode="numeric">
+                                </div>
+                            </div>
+                            <button type="submit" class="form__btn text-bold">ПРИМЕНИТЬ</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <select id="brand" name="brand" required>
-                            <option value="">Любого бренда</option>
-                            <option value="КЛюбого бренда">Любого бренда-1</option>
-                            <option value="Любого бренда">Любого бренда-2</option>
-                            <option value="Любого бренда">Любого бренда-3</option>
-                            <option value="Любого бренда">Любого бренда-4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <div class="form__input d-flex">
-                            <span class="form__prefix-label text-regular">от</span>
-                            <input type="text" class="form__price text-bold" value="500 000" placeholder="Введите цену"
-                                inputmode="numeric">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form__input d-flex">
-                            <span class="form__prefix-label text-regular">до</span>
-                            <input type="text" class="form__price text-bold" value="25 000 000"
-                                placeholder="Введите цену" inputmode="numeric">
-                        </div>
-                    </div>
-                    <button type="submit" class="form__btn text-bold">ПРИМЕНИТЬ</button>
-                </form>
-            </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
 
 
