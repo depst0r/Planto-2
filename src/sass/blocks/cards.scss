@@ -7,6 +7,10 @@
         &-info {
             margin-top: 5px;
         }
+
+        &-title {
+            margin-bottom: 5px;
+        }
     }
 
     &-active {
@@ -14,12 +18,22 @@
         flex-direction: column;
     }
 
-    &__sale {
-        padding-top: 21px;
+    &__simple {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    &__sale {
         &-actual {
             font-size: 20px;
             color: $red;
+        }
+
+        &-blue {
+            font-size: 20px;
+            color: $blue;
+            margin-bottom: 8px;
         }
 
         &-price {

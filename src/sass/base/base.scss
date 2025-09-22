@@ -103,6 +103,14 @@ select {
     }
 }
 
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-31 {
+    padding-top: 31px;
+}
+
 @media screen and (min-width: 1300px) {
     .container {
         padding: $breakpoints-end;
