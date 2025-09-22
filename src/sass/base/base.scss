@@ -107,8 +107,19 @@ select {
     padding-top: 15px;
 }
 
-.pt-31 {
+.pt-card-sale {
     padding-top: 31px;
+}
+
+.d-none {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .pt-card-sale {
+        padding-top: 64px;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {

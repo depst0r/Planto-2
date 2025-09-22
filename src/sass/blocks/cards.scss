@@ -2,6 +2,12 @@
 
 .cards {
     padding-top: 25px;
+    padding-bottom: 39px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     &__information {
         &-info {
@@ -59,6 +65,10 @@
         }
     }
 
+    &__info-lg {
+        display: none;
+    }
+
     .card {
         padding: 18px;
         border: 1px solid #d0d0d0;
@@ -77,5 +87,35 @@
                 background: #8eacfc;
             }
         }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .cards {
+        &-active {
+            flex-direction: row;
+            padding: 27px 24px 16px 21px;
+
+            .cards__img {
+                flex: 1 1 50%;
+            }
+
+            .cards__information {
+                flex: 1 1 50%;
+            }
+        }
+
+        &__info {
+
+            &-sm {
+                display: none;
+            }
+
+            &-lg {
+                display: block;
+            }
+        }
+
     }
 }
