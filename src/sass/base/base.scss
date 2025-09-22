@@ -63,6 +63,20 @@ select {
     }
 }
 
+.card-hover-red {
+    &:hover {
+        background: $hover-card-red;
+        border: 1px solid #ff3d3d !important;
+    }
+}
+
+.card-hover-blue {
+    &:hover {
+        background: $hover-card-blue;
+        border: 1px solid #819deb;
+    }
+}
+
 
 .d-flex {
     display: flex;
