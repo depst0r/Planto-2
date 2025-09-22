@@ -105,5 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.close-btn').addEventListener('click', () => {
         document.querySelector('.modal-overlay').style.display = 'none';
-    });
+    })
+
+    document.querySelector('.search-icon').addEventListener('click', () => {
+        document.querySelector('.search').classList.toggle('active');
+    })
 })

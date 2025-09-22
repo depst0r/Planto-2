@@ -1,0 +1,21 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.search {
+    height: 44px;
+    background: #1f497b;
+    justify-content: flex-start;
+    align-items: center;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    position: fixed;
+
+    &__title {
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+.search.active {
+    top: 72px;
+}
