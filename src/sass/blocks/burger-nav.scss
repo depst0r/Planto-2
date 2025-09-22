@@ -1,0 +1,38 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.burger-nav {
+    position: fixed;
+    background: $blue-2;
+    padding-bottom: 12px;
+    top: -100%;
+    left: 0;
+    width: 100%;
+
+    &-active {
+        top: 72px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 22px;
+
+        li {
+            padding: 11px 0 11px 7px;
+            height: 40px;
+            text-align: left;
+            justify-content: center;
+
+            &:hover {
+                background: #618cbf;
+                border-radius: 1px;
+            }
+
+            a {
+                font-size: 14px;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

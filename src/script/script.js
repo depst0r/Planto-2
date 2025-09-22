@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterBtn = document.querySelector('.filter__btn');
     const modal = document.querySelector('.modal');
 
+    const isOpen = (btn, item, activeClass) => {
+        document.querySelector(btn).addEventListener('click', () => {
+            document.querySelector(item).classList.toggle(activeClass);
+        })
+    }
+
     document.getElementById('form')?.addEventListener('submit', e => {
         e.preventDefault();
     })
@@ -44,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation()
             const select = trigger.closest('.form__select')
             toggleSelect(select)
-        });
-    });
+        })
+    })
 
     document.querySelectorAll('.form__select-option').forEach(option => {
         option.addEventListener('click', e => {
@@ -97,17 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtn?.addEventListener('click', openModal)
     closeBtn?.addEventListener('click', closeModal)
 
-    modalOverlay?.addEventListener('click', (e) => {
+    modalOverlay?.addEventListener('click', e => {
         if (e.target === modalOverlay) closeModal()
     })
 
-    modal?.addEventListener('click', (e) => e.stopPropagation())
+    modal?.addEventListener('click', e => e.stopPropagation())
 
     document.querySelector('.close-btn').addEventListener('click', () => {
         document.querySelector('.modal-overlay').style.display = 'none';
     })
 
-    document.querySelector('.search-icon').addEventListener('click', () => {
-        document.querySelector('.search').classList.toggle('active');
-    })
+    isOpen('.search-icon', '.search', 'active')
+    isOpen('.header__burger', '.burger-nav', 'burger-nav-active')
 })
