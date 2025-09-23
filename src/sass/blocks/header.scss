@@ -1,4 +1,5 @@
 @use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
 
 .header {
     align-items: center;
@@ -25,5 +26,92 @@
     &__logo {
         font-size: 28px;
         color: $white;
+    }
+
+    &__minimal-search {
+        display: none;
+        position: relative;
+        width: 452px;
+    }
+
+    &__minimal-input {
+        width: 100%;
+        padding-left: 14px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        background: transparent;
+        outline: none;
+        font-size: 14px;
+
+        &::placeholder {
+            @include regular;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    &__search-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .header {
+        display: grid;
+
+        &__columns {
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+
+        &__minimal-search {
+            display: flex;
+        }
+
+        &__column {
+            align-items: center;
+
+            &:nth-child(1) {
+                gap: 37px;
+            }
+
+            &:nth-child(2) {
+                gap: 38px;
+            }
+        }
+
+        &__columns {
+            justify-content: space-between;
+            gap: 0;
+        }
+
+        .d-none {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        &__minimal-search {
+            width: 697px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        display: none;
     }
 }

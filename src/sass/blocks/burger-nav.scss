@@ -1,7 +1,7 @@
 @use '/src/sass/base/variables.scss'as *;
 
 .burger-nav {
-    position: fixed;
+    position: absolute;
     background: $blue-2;
     padding-bottom: 12px;
     top: -100%;
@@ -9,7 +9,7 @@
     width: 100%;
 
     &-active {
-        top: 72px;
+        top: 70px;
     }
 
     ul {

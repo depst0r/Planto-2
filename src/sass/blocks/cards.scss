@@ -96,6 +96,8 @@
         &-active {
             flex-direction: row;
             padding: 27px 24px 16px 21px;
+            grid-column-start: 1;
+            grid-column-end: 3;
 
             .cards__img {
                 flex: 1 1 50%;
@@ -107,7 +109,6 @@
         }
 
         &__info {
-
             &-sm {
                 display: none;
             }
@@ -117,5 +118,30 @@
             }
         }
 
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 360px;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .cards {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 360px;
+        }
     }
 }
