@@ -77,6 +77,13 @@ select {
     }
 }
 
+.hover-payment {
+    cursor: pointer;
+
+    &:hover {
+        fill: #c50000;
+    }
+}
 
 .d-flex {
     display: flex;
