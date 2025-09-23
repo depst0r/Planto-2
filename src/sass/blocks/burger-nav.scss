@@ -8,6 +8,10 @@
     left: 0;
     width: 100%;
 
+    &__basket {
+        display: none;
+    }
+
     &-active {
         top: 70px;
     }
@@ -34,5 +38,56 @@
             }
         }
     }
+}
 
+@media screen and (min-width: 1300px) {
+    .burger-nav {
+        position: inherit;
+        background-color: #1f497b;
+        height: 46px;
+
+        &__basket {
+            display: flex;
+            gap: 9px;
+
+            span {
+                font-size: 16px;
+                color: $white;
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                span,
+                svg {
+                    color: $yellow;
+                    fill: $yellow;
+                    transition: fill 0.3s ease;
+                }
+            }
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            flex-direction: row;
+            gap: 39px;
+
+            li {
+                &:hover {
+                    background: transparent;
+                }
+
+                a {
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
 }

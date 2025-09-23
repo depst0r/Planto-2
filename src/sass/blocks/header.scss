@@ -133,6 +133,11 @@
 
         &__number {
             display: block;
+
+            &:hover {
+                color: $yellow;
+                cursor: pointer;
+            }
         }
 
         &__column {
@@ -155,6 +160,11 @@
             text-decoration: underline;
             text-decoration-skip-ink: none;
             color: $white;
+
+            &:hover {
+                color: $yellow;
+                cursor: pointer;
+            }
         }
 
         .payment {
