@@ -38,11 +38,12 @@
         display: none;
         position: relative;
         width: 452px;
+
     }
 
     &__minimal-input {
         width: 100%;
-        padding-left: 14px;
+        padding-left: 17px;
         border: none;
         border-bottom: 1px solid #ccc;
         background: transparent;
@@ -61,7 +62,7 @@
     &__search-icon {
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 41.5%;
         transform: translateY(-50%);
     }
 

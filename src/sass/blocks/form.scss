@@ -21,6 +21,9 @@
     position: relative;
 }
 
+.form-xl {
+    display: none;
+}
 
 .form {
     &__wrapper {
@@ -73,10 +76,6 @@
         flex-direction: column;
         gap: 19px;
         padding: 21px 18px 19px 18px;
-    }
-
-    .form-xl {
-        display: none;
     }
 
     &__select {
