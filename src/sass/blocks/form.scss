@@ -75,6 +75,10 @@
         padding: 21px 18px 19px 18px;
     }
 
+    .form-xl {
+        display: none;
+    }
+
     &__select {
         position: relative;
         width: 100%;
@@ -190,4 +194,70 @@
     top: -27px;
     left: 93%;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+    .form-xl {
+        display: block;
+        padding-top: 25px;
+    }
+
+    #form-xl {
+        gap: 27px;
+    }
+
+    .form {
+        &__group {
+            &-select {
+                gap: 14px;
+            }
+
+            &-price {
+                align-items: center;
+            }
+
+            &-text {
+                font-size: 16px;
+                color: $gray;
+
+                &:nth-child(1) {
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        &__select {
+            width: 264px;
+            height: 48px;
+
+            &-trigger {
+                height: 48px;
+            }
+
+            &-dropdown {
+                display: flex;
+                flex-direction: column;
+                max-height: 300px !important;
+                gap: 3px;
+                transform: translateY(-8px) !important;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 230px;
+                    height: 1px;
+                    background: #d0d0d0;
+                    margin-left: 17px;
+                }
+            }
+        }
+
+        &__input {
+            width: 132.5px;
+        }
+
+        &__price {
+            width: 94px;
+        }
+    }
 }
